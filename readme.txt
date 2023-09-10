@@ -7,7 +7,7 @@ GET /city/city_id/street/ — получение всех улиц города;
 POST /shop/ — создание магазина; Данный метод получает json c объектом магазина, в ответ возвращает данные созданной записи
 GET /shop/?street=&city=&open=0/1 — получение списка магазинов
 Подготовительные действия
-Клонировать проект git clone
+Клонировать проект git clone https://github.com/rozhnovilya85/magazin_db
 Установить зависимости pip3 install -r requirements.txt
 Создать базу данных в СУБД PostreSQL
 По пути mediasoft/settings.py в DATABASES указать данные базы данных
