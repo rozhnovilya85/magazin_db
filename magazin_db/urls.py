@@ -23,11 +23,11 @@ from api_magazin.views import CityAPIView, ShopAPIView
 
 router = routers.SimpleRouter()
 router.register(r'city', CityAPIView)
-# router.register(r'shop', ShopAPIView)
+router.register(r'shop', ShopAPIView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
-    path('shop/', ShopAPIView.as_view()),
+    # path('shop/', ShopAPIView.as_view()),
 
 ]

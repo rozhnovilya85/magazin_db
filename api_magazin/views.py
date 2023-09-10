@@ -24,7 +24,7 @@ class CityAPIView(viewsets.ModelViewSet):
         return Response(street)
 
 
-class ShopAPIView(ListCreateAPIView):
+class ShopAPIView(viewsets.ModelViewSet):
     queryset = Magazine.objects.all()
     serializer_class = ShopSerializer
     filter_backends = [filters.DjangoFilterBackend]
